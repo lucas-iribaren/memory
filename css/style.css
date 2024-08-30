@@ -1,0 +1,98 @@
+/* css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url(../images/bg.jpg) no-repeat ; /* Centrer l'image */
+    background-size: cover; /* Ajuster l'image pour couvrir tout l'écran */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    height: 100vh;
+}
+
+
+h1 {
+    color: #333;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form *{
+    width: 80%;
+    margin: 10px auto;
+}
+
+form,
+.leaderboard,
+.profile {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+
+}
+
+.card {
+    width: 144.5px;
+    height: 170px;
+    margin: 10px;
+    cursor: pointer;
+    background: url(../images/bg-card.png) no-repeat center center;
+    background-size: contain;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    user-select: none; /* Pour la plupart des navigateurs */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.card.hidden img {
+    display: block;
+}
+
+.card.flipped {
+    background-color: white;
+}
+
+.card.flipped img {
+    display: block;
+}
