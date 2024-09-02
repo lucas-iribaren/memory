@@ -21,7 +21,9 @@ class Game {
         $allImages = range(1, 25);
 
         shuffle($allImages);
-
+        shuffle($allImages);
+        shuffle($allImages);
+        
         // Ne sélectionne que le nombre de paires nécessaire
         $selectedImages = array_slice($allImages, 0, $this->pairsCount);
 
@@ -63,4 +65,3 @@ class Game {
         return $this->score;
     }
 }
-?>
