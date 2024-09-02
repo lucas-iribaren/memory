@@ -35,4 +35,3 @@ class Card {
         return $this->id === $otherCard->getId();
     }
 }
-?>

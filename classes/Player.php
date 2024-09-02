@@ -44,4 +44,3 @@ class Player {
         return $this->profile;
     }
 }
-?>

@@ -39,4 +39,3 @@ class Leaderboard {
         return $this->topPlayers;
     }
 }
-?>

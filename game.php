@@ -30,15 +30,10 @@ if ($game->checkForWin()) {
     <div class="cards">
     <?php foreach ($cards as $index => $card): ?>
         <div class="card" data-id="<?php echo $card->getId(); ?>" data-index="<?php echo $index; ?>">
-            <!-- Remplacez le chemin de l'image par le chemin correct de votre fichier -->
             <img src="images/<?php echo htmlspecialchars($card->getImage()); ?>.png" alt="Carte" class="hidden">
         </div>
     <?php endforeach; ?>
 </div>
 
-
-    <script>
-        // Vous pouvez intégrer un script JS ici pour gérer le retournement des cartes
-    </script>
 </body>
 </html>

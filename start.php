@@ -18,5 +18,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Location: game.php');
     exit();
 }
-?>
-    
